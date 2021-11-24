@@ -1,11 +1,11 @@
 <div class="todo-component">
-    <form>
+    <div class="todo-add">
         <input type="text" #todo placeholder="Add todo" name="todo">
-        <button class="add" (click)="addItems(todo.value)">Add</button>
-    </form>
+        <button class="add" (click)="addItems(todo.value) ">Add</button>
+    </div>
 
     <ul class='todo-list'>
-        <li *ngFor="let item of items; let i=index;" class="{{ (item.completed ? 'done' : '') }}">
+        <li *ngFor="let item of items; let i=index;" [class]="item.completed ? 'done' : ''">
             <div class="todo-index">{{ i + 1 }}</div>
             <input type="checkbox" [checked]="item.completed" (click)="toggleTodoStatus(i)"> 
             <p class="todo-content">{{ item.content }}</p>
