@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+    font-family: 'Arimo';
+    margin: 0;
+}
+
+h1{
+    font-size: 54px;
+}
+
+body{
+    background-color: #efefef;
+}
+
+button{
+    padding: 10px 20px;
+    font-family: 'Arimo';
+    border-width: 0;
+    border-radius: 2px;
+}
+
+input{
+    font-family: 'Arimo';
+    font-size: 16px;
+}
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
