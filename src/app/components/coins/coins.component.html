@@ -1,0 +1,14 @@
+<div *ngIf="!isError" class="coins-container">
+    <div *ngIf="listOfCoins.length" class="coins-list">
+        <div *ngFor="let oneCoin of listOfCoins">
+            <app-coin [coin]="oneCoin"></app-coin>
+        </div>
+    </div>
+    <div *ngIf="!listOfCoins.length">
+        We have no coins
+    </div>
+</div>
+<div *ngIf="isError">
+    We had an issue reaching the server
+</div>
+

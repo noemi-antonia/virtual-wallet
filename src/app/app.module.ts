@@ -6,7 +6,12 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { TodolistComponent } from './components/dashboard/todolist/todolist.component';
+import { TodolistComponent } from './components/todolist/todolist.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CoinsComponent } from './components/coins/coins.component';
+import { CoinComponent } from './components/coin/coin.component';
+import { MatCardModule } from '@angular/material/card';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,11 +19,16 @@ import { TodolistComponent } from './components/dashboard/todolist/todolist.comp
     HeaderComponent,
     DashboardComponent,
     FooterComponent,
-    TodolistComponent
+    TodolistComponent,
+    CoinsComponent,
+    CoinComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

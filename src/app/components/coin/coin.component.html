@@ -1,0 +1,13 @@
+<mat-card class="coin-card">
+<img mat-card-sm-image [src]="coin.image" alt="coin logo" class="coin-logo">
+   <mat-card-subtitle class="coin-name-label">
+      Coin name:
+   </mat-card-subtitle>
+   <mat-card-title class="coin-name">
+      {{ coin.name }}
+   </mat-card-title>
+   <mat-card-content class="coin-details">
+      <p class="coin-current-price"><span>Current price: </span>$ {{ coin.current_price.toFixed(2) }}</p>
+      <p><span>Last update: </span>{{ formatDate(coin.last_updated) }}</p>
+   </mat-card-content>
+</mat-card>

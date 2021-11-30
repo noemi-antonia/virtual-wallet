@@ -1,0 +1,9 @@
+.coins-container{
+    margin:0px 40px;
+}
+.coins-list{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap:20px;
+}

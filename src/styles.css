@@ -1,5 +1,4 @@
 html, body {
-    font-family: 'Arimo';
     margin: 0;
 }
 
@@ -27,3 +26,6 @@ input{
     position: relative;
     min-height: 100vh;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,5 +1,5 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import {Todo} from './../../../models/Todo';
+import { Component, OnInit } from '@angular/core';
+import {Todo} from '../../models/Todo';
 
 @Component({
   selector: 'app-todolist',
@@ -9,8 +9,6 @@ import {Todo} from './../../../models/Todo';
 export class TodolistComponent implements OnInit {
 
   items: Todo[] = [];
-
-  @ViewChild('todo') input:any;
 
   constructor() {}
 
@@ -34,15 +32,10 @@ export class TodolistComponent implements OnInit {
   addItems = (value: string) => {
     if(value!==""){
       this.items.push({content:value,completed:false});
-      this.clearInputfield();
     }
     else{
       alert('Please insert a todo **')
     }
-  }
-
-  clearInputfield(){
-    this.input.nativeElement.value = '';
   }
 
   toggleTodoStatus = (index: any) => {
