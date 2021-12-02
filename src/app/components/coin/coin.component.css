@@ -1,0 +1,35 @@
+.coin-card{
+    width: 300px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coin-logo{
+    margin-bottom:15px;
+}
+
+.coin-name{
+    text-align: center;
+}
+
+.coin-name-label, .coin-details{
+    padding-top :15px;
+}
+
+.coin-details span{
+    font-weight: 400;
+    color:rgba(0, 0, 0, 0.54);
+}
+
+.coin-details p{
+    margin-bottom: 5px;
+    font-weight: 500;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.coin-current-price{
+    background-color: #fff6de;
+}

@@ -1,7 +1,7 @@
 <div class="todo-component">
     <div class="todo-add">
         <input type="text" #todo placeholder="Add todo" name="todo">
-        <button class="add" (click)="addItems(todo.value) ">Add</button>
+        <button class="add" (click)="addItems(todo.value); todo.value=''">Add</button>
     </div>
 
     <ul class='todo-list'>
