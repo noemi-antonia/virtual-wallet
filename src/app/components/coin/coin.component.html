@@ -8,6 +8,6 @@
    </mat-card-title>
    <mat-card-content class="coin-details">
       <p class="coin-current-price"><span>Current price: </span>$ {{ coin.current_price.toFixed(2) }}</p>
-      <p><span>Last update: </span>{{ formatDate(coin.last_updated) }}</p>
+      <p><span>Last update: </span>{{ coin.last_updated | date: 'short' }}</p>
    </mat-card-content>
 </mat-card>

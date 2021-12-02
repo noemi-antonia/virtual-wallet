@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-coin',
@@ -13,12 +12,6 @@ export class CoinComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-  }
-
-  formatDate(date:string){
-    const pipe = new DatePipe('en-us');
-    const formattedDate = pipe.transform(date, 'short');
-    return formattedDate;
   }
 
 }
